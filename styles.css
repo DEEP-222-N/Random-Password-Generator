@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box; /* see notes for explaination */
+}
+
+body{
+    background: linear-gradient(to right, red, rgba(255, 0, 0, 0.301));
+    color: beige;
+}
+
+.container{
+    margin-top: 10%;
+    margin-left: 22%;
+    width: 90%;
+    max-width: 600px; 
+    /* This ensures the element takes up 90% of the available space but does not exceed 700 pixels in width. */
+    /* use hit and trial for fun */
+}
+
+.display{
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: aliceblue;
+    color: #333;
+    display: flex;
+    align-items: center;/* icons and input field will be side by side */
+    justify-content: space-around;
+    padding: 25px 20px;
+    border-radius: 50px;
+}
+
+.container h1{
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.container h1 span{
+    color:darkred;
+    border-bottom: 5px solid darkorange;
+    padding-bottom: 7px; /* line ko upar neeche karne ke liye */
+
+}
+
+.container h4 {
+    color:maroon;
+
+}
+.container h3 {
+    color:maroon;
+    margin-left: 50px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.display img{
+    cursor: pointer;
+}
+
+.display input{
+    border: 0;
+    outline: 0;
+    font-size: 25px;
+}
+
+.container button {
+    width: 200px;
+    margin-left: 35%;
+    border: 0;
+    outline: 0;
+    border-radius: 100px;
+    background-color: rgb(129, 6, 6);
+    color: white;
+    font-size: 20px;
+    font-weight: 250;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.container button:hover {
+
+    background-color: aliceblue; 
+    color: rgb(129, 6, 6);
+    border: 2px solid rgb(110, 8, 8); 
+    transition: 0.3s ease-in-out; 
+}
+
